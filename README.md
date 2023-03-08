@@ -1,5 +1,5 @@
 # Tim Cross
-## Stats 220
+### Stats 220
 
 * This *README* was created for coursework in **Stats 220**. 
 
