@@ -2,7 +2,7 @@
 ## Stats 220
 
 * This *README* was created for coursework in **Stats 220**. 
-    * If you are interested in viewing my professional experience, please find my LinkedIn profile, [here](https://www.linkedin.com/in/tim-cross-b4b99b1b8/). 
+    * If you are interested in viewing my work history, please find my LinkedIn profile, [here](https://www.linkedin.com/in/tim-cross-b4b99b1b8/). 
 
 
 
