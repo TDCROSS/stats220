@@ -9,6 +9,6 @@
 
 
 
-Some cool facts about me:
-1. I ran a marathon with no training
-2. I used to play the clarinet
+Some random facts about me:
+1. In 2022, I ran a marathon with no training
+2. I got 3rd in my shot put competition
