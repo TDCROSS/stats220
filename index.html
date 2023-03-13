@@ -417,35 +417,38 @@ library(magick)
 gif_image &lt;- image_read(path = &quot;Smile.png&quot;) %&gt;%
   image_scale(500)
 
-
-# creating a vector for the counts
-counts &lt;- 1 : 4 %&gt;% as.character()
-
 # creating each frame, where the text comes from the counts vector
 frame1 &lt;- image_blank(color = &quot;white&quot;, width = 500, height = 500) %&gt;%
-  image_annotate(text = counts[3], size = 100, gravity = &quot;center&quot;)
+  image_annotate(text = 5, size = 100, gravity = &quot;center&quot;, weight = 500)
 
 frame2 &lt;- image_blank(color = &quot;white&quot;, width = 500, height = 500) %&gt;%
-  image_annotate(text = counts[2], size = 100, gravity = &quot;center&quot;)
+  image_annotate(text = 4, size = 100, gravity = &quot;center&quot;, weight = 500)
 
 frame3 &lt;- image_blank(color = &quot;white&quot;, width = 500, height = 500) %&gt;%
-  image_annotate(text = counts[1], size = 100, gravity = &quot;center&quot;)
+  image_annotate(text = 3, size = 100, gravity = &quot;center&quot;, weight = 500)
 
-frame4 &lt;- gif_image %&gt;%
-  image_annotate(text = &quot;Smile&quot;, size = 100, gravity = &quot;south&quot;)
+frame4 &lt;- image_blank(color = &quot;white&quot;, width = 500, height = 500) %&gt;%
+  image_annotate(text = 2, size = 100, gravity = &quot;center&quot;, weight = 500)
+
+frame5 &lt;- image_blank(color = &quot;white&quot;, width = 500, height = 500) %&gt;%
+  image_annotate(text = 1, size = 100, gravity = &quot;center&quot;, weight = 500)
+
+frame6 &lt;- gif_image %&gt;%
+  image_annotate(text = &quot;Smile&quot;, size = 100, gravity = &quot;south&quot;, col = &quot;yellow&quot;, weight = 800)
 
 # putting the frames in order using a vector
-frames &lt;- c(frame1, frame2, frame3, frame4)
+frames &lt;- c(frame1, frame2, frame3, frame4, frame5, frame6)
 
 # creating an animation
-gif &gt;- image_animate(frames, fps = 1)
+animation &lt;- image_animate(frames, fps = 1)
 
-#saving my images as a gif
-image_write(image_an, &quot;my_animation.gif&quot;)</code></pre>
+#saving my image as a gif
+image_write(animation, &quot;my_animation.gif&quot;)</code></pre>
 <pre class="css"><code>p {
 font-weight: bold;
 font-family: Times;
 font-size: 18px;
+font-style: normal;
 background-color: #99ff66;
 padding: 10px
 }</code></pre>
@@ -454,6 +457,7 @@ p {
 font-weight: bold;
 font-family: Times;
 font-size: 18px;
+font-style: normal;
 background-color: #99ff66;
 padding: 10px
 }
